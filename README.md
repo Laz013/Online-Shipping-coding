@@ -7,7 +7,7 @@ Research the Tax / GST of current countries
 Communicate clearly to the client as to what they will be being charged with. 
 Display the total with Tax/ GST / Vat
 
-# Countries I have selected - South Africa / Australia / Mexico /  England
+#Countries I have selected - South Africa / Australia / Mexico /  England
 
 country=""
 
@@ -15,10 +15,10 @@ orderTotal=0
 totalWithTax=0
 
 #Captured July 2026
-# South Africa has a tax rate of 15% 
-# Australia has a unified national Goods and Services Tax of 10% GST
-# Mexico has a tax rate of 20% 
-# England has a tax rate of 16%
+#South Africa has a tax rate of 15% 
+#Australia has a unified national Goods and Services Tax of 10% GST
+#Mexico has a tax rate of 20% 
+#England has a tax rate of 16%
 
 stax=.15
 gst=.10
@@ -40,7 +40,7 @@ while orderTotal < 0:
     print("Order total cannot be negative.")
     orderTotal = float(input("Please enter the total order amount: "))
 
-#  we have to change the calculation based on the Country they specified
+#we have to change the calculation based on the Country they specified
 
 country = country.strip().lower()
 
@@ -69,17 +69,17 @@ else:
     
 #Smaller coding for the same code above:
 #taxRates = {
-#     "south africa": 0.15,
-#     "australia": 0.10,
-#     "mexico": 0.20,
-#     "england": 0.16
-# }
-# country = country.strip().lower()
-# if country in taxRates:
-#     taxRate = taxRates[country]
-#     taxAmount = orderTotal * taxRate
-#     totalWithTax = orderTotal + taxAmount
-#     print(f"Tax Amount: {taxAmount:.2f}")
-#     print(f"Total Due: {totalWithTax:.2f}")
-# else:
-#     print("Country not found.")
+#"south africa": 0.15,
+#"australia": 0.10,
+#"mexico": 0.20,
+#"england": 0.16
+#}
+#country = country.strip().lower()
+#if country in taxRates:
+#taxRate = taxRates[country]
+#taxAmount = orderTotal * taxRate
+#totalWithTax = orderTotal + taxAmount
+#print(f"Tax Amount: {taxAmount:.2f}")
+#print(f"Total Due: {totalWithTax:.2f}")
+#else:
+#print("Country not found.")
